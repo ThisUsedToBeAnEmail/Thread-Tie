@@ -42,7 +42,7 @@ sub shutdown {
 
     if ($THREAD) {
         $THREAD->shutdown;
-	undef( $THREAD );
+       undef( $THREAD );
     }
 } #shutdown
 
@@ -276,6 +276,8 @@ sub UNTIE {
 
 __END__
 
+=encoding utf8
+
 =head1 NAME
 
 Thread::Tie - tie variables into a thread of their own
@@ -306,7 +308,7 @@ This documentation describes version 0.14.
     tie @array, 'Thread::Tie', {}, qw(a b c);
     tie %hash, 'Thread::Tie', {}, (a => 'A', b => 'B', c => 'C');
     tie *HANDLE, 'Thread::Tie', {},'>:layer','filename';
-    
+
     # create an alternate thread and use that
     my $tiethread = Thread::Tie::Thread->new;
     tie $scalar, 'Thread::Tie', {thread => $tiethread};
