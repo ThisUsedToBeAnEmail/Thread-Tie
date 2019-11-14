@@ -1,15 +1,13 @@
 language: perl
 perl:
-  - "5.8"
-  - "5.8.4"
-  - "5.8.4-thr"
-  - "5.12.2"
-  - "5.20"
-  - "5.26"
-  - "blead"
+  - "5.26-shrplib"
+  - "5.24-shrplib"
+  - "5.22-shrplib"
+  - "5.20-shrplib"
+  - "5.18-shrplib"
 matrix:
   include:
-    - perl: 5.18
+    - perl: "5.18-shrplib"
       env: COVERAGE=1
   allow_failures:
     - perl: "blead"
