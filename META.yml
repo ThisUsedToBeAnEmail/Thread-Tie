@@ -4,7 +4,7 @@ version:            0.13
 abstract:           tie variables into a thread of their own
 author:
     - Elizabeth Mattijsen (liz@dijkmat.nl)
-license:            unknown
+license:            perl5
 distribution_type:  module
 configure_requires:
     ExtUtils::MakeMaker:  0

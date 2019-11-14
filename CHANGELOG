@@ -1,4 +1,11 @@
-0.14 	6 November 2019
+0.15	14 November 2019
+	- Fixed pod error as reported by CPANTS. - Mohammad S Anwar (MANWAR)
+	- Add .travis.yml
+        - Update Makefile.PL to include CONFIGURE_REQUIRES, BUILD_REQUIRES, dist, clean
+        - Add link to github repository
+        - Update Licence
+
+0.14 	9 November 2019
 	Adoption.
 
 0.13	19 September 2010
