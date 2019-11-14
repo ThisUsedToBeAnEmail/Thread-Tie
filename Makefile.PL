@@ -1,6 +1,7 @@
 require 5.008;
 use threads (); # just to force breakage if threads are not available
 use ExtUtils::MakeMaker;
+use Module::Metadata;
 eval "use Devel::Required";
 
 WriteMakefile (
